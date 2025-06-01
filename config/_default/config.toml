@@ -1,4 +1,4 @@
-baseURL = 'https://lia-brueggemann.de'
+baseURL = 'https://www.lia-brueggemann.de'
 languageCode = ''
 title = 'Magnolia Default' # This can get overwritten by the single language files
 defaultContentLanguage = 'en'
