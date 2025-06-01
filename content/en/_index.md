@@ -1,6 +1,6 @@
 ---
 title: ''
-description: 'A free hugo theme'
+description: 'My Website'
 draft: false
 ---
 ## What is this Site for?
@@ -11,5 +11,3 @@ I began by writing small **Java** and **Go** programs and am currently learning 
 
 Consider this site a **hobby project** where errors might pop up; it's more of a test than anything else. Here, I aim to publish short **articles** on these topics. Feel free to browse!
 
-
-fefre
