@@ -1,0 +1,455 @@
+<!doctype html>
+<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title>
+      Single GPU Passthrough in VMs |
+      Lia Brüggemann
+      My Personal Website
+    </title>
+  
+  <meta charset="utf-8" />
+  <meta
+    name="description"
+    
+      content="The Problem
+Most people are used to running a single operating system on their PC—it&rsquo;s the way it&rsquo;s meant to be, and it usually works like a charm. But what if you need to test something on a different OS or want to use software only available on another one? The traditional approach would be to dual-boot or even triple-boot, but let&rsquo;s be honest, that can be a bit of a headache."
+    
+  />
+
+  <meta name="dc.relation" content="http://localhost:1313/" />
+
+  <meta name="robots" content="index,follow" />
+  
+
+
+  
+  <meta
+    itemprop="name"
+    content="Single GPU Passthrough in VMs Lia Brüggemann My Personal Website"
+  />
+  <meta
+    itemprop="description"
+    
+      content="The Problem
+Most people are used to running a single operating system on their PC—it&rsquo;s the way it&rsquo;s meant to be, and it usually works like a charm. But what if you need to test something on a different OS or want to use software only available on another one? The traditional approach would be to dual-boot or even triple-boot, but let&rsquo;s be honest, that can be a bit of a headache."
+    
+  />
+
+  
+  
+    <meta itemprop="image" content="images/featured.jpg" />
+  
+
+
+  
+  <meta property="og:url" content="http://localhost:1313/posts/gpu/" />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:title"
+    content="Single GPU Passthrough in VMs Lia Brüggemann My Personal Website"
+  />
+  <meta
+    property="og:description"
+    
+      content="The Problem
+Most people are used to running a single operating system on their PC—it&rsquo;s the way it&rsquo;s meant to be, and it usually works like a charm. But what if you need to test something on a different OS or want to use software only available on another one? The traditional approach would be to dual-boot or even triple-boot, but let&rsquo;s be honest, that can be a bit of a headache."
+    
+  />
+  
+    <meta property="og:image" content="images/featured.jpg" />
+  
+
+
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Single GPU Passthrough in VMs Lia Brüggemann My Personal Website"
+  />
+  <meta
+    name="twitter:description"
+    
+      content="The Problem
+Most people are used to running a single operating system on their PC—it&rsquo;s the way it&rsquo;s meant to be, and it usually works like a charm. But what if you need to test something on a different OS or want to use software only available on another one? The traditional approach would be to dual-boot or even triple-boot, but let&rsquo;s be honest, that can be a bit of a headache."
+    
+  />
+  
+    <meta name="twitter:image" content="images/featured.jpg" />
+  
+
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <meta name="theme-color" content="#1A94D2" />
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/styles.min.css" media="screen" />
+
+  
+  
+  <link
+    rel="shortcut icon"
+    type="image/x-icon"
+    href="/img/favicon.ico"
+  />
+  
+  
+  
+  
+</head>
+<body
+    class="background-image"
+    
+    style="background-image: url('/img/background.webp')"
+    
+  >
+<header class="shadow-sm sticky-lg-top" style="z-index: 10000;">
+  <nav class="navbar navbar-expand-lg navbar-light py-3">
+    <div class="container px-5">
+      <a class="navbar-brand" href="http://localhost:1313/"
+        >
+        <span class="fw-bolder"
+          >Lia Brüggemann <br />
+          <span class="fw-light text-muted"
+            >My Personal Website</span
+          ></span
+        >
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul
+          class="navbar-nav align-items-center ms-auto mb-2 mb-lg-0 fw-bolder"
+        >
+          <li class="nav-item">
+            <a class="nav-link nav-menu text-nowrap" href="/">Home</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link nav-menu text-nowrap" href="/projects/">Projects</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link nav-menu text-nowrap" href="/posts/">Posts</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link nav-menu text-nowrap" href="/contacts/">Contact</a>
+          </li>
+          
+          <li class="vr ms-1 d-none d-lg-block"></li>
+          
+          
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+</header>
+<div id="content">
+      <main class="p-3 p-lg-5 container">
+        <div class="container">
+<div class="container">
+  
+  <h1>Single GPU Passthrough in VMs</h1>
+  <img
+    class="rounded img-fluid shadow post-img mb-3"
+    src="/posts/gpu/images/featured.jpg"
+    alt="Single GPU Passthrough in VMs post featured image"
+  />
+  
+
+  <div class="row g-2">
+    
+    <div class="col-sm-12 col-lg-6 order-2 order-lg-1">
+      
+      <a
+        href="/tags/gpu/"
+        class="btn btn-sm btn-light border-primary mb-2"
+        >#GPU</a
+      >
+      
+      <a
+        href="/tags/vms/"
+        class="btn btn-sm btn-light border-primary mb-2"
+        >#VMs</a
+      >
+      
+      <a
+        href="/tags/passtrough/"
+        class="btn btn-sm btn-light border-primary mb-2"
+        >#Passtrough</a
+      >
+      
+    </div>
+    
+    <div
+      class="col-sm-12 col-lg-6 d-flex justify-content-lg-end order-1 order-lg-2"
+    >
+      <small class="text-muted"
+        >Photo by <a href="https://unsplash.com/@steve_j?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Steve Johnson</a> on <a href="https://unsplash.com/photos/blue-and-yellow-abstract-painting-wpw8sHoBtSY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></small
+      >
+    </div>
+  </div>
+  
+  <div class="row g-2">
+    <small class="text-muted col"
+      >28 July , 2024</small
+    >
+  </div>
+  <hr />
+  
+  <div class="row g-3 gx-lg-5">
+    <div class="col order-lg-first"><h1 id="the-problem">The Problem</h1>
+<p>Most people are used to running a single operating system on their PC—it&rsquo;s the way it&rsquo;s meant to be, and it usually works like a charm. But what if you need to test something on a different OS or want to use software only available on another one? The traditional approach would be to dual-boot or even triple-boot, but let&rsquo;s be honest, that can be a bit of a headache.</p>
+<p>The problem with multiboot setups is that a Bootloader (often Windows) can mess with other bootloaders and leave you with an unbootable system. Managing your drives can also become a hassle since some operating systems use filesystems not supported by others.</p>
+<p>A more convenient solution for testing and using different operating systems is to turn to virtual machines. With VMs, you sidestep the issues associated with multiboot setups. However, there&rsquo;s often a trade-off in terms of performance, with your CPU taking a hit, and GPU performance suffering. But what if I told you there&rsquo;s a way to pass a GPU to your virtual machine, unlocking 100% graphics performance?</p>
+<p>This concept is known as GPU passthrough, and it works by unbinding GPU drivers from your base OS and rebinding the GPU to your virtual machine. The catch is that most guides on the internet require at least two GPUs, which can be a problem for those who can&rsquo;t afford multiple graphics cards.</p>
+<h1 id="installation">Installation</h1>
+<hr>
+<h2 id="install-ubuntu">Install Ubuntu</h2>
+<p>Start with the latest version of Ubuntu Desktop as your base OS.</p>
+<h2 id="clone-repository">Clone Repository</h2>
+<p>Clone the following GitHub repository using the terminal:</p>
+<pre><code>git clone https://github.com/wabulu/Single-GPU-passthrough-amd-nvidia.git
+</code></pre>
+<h2 id="execute-setup-script">Execute Setup Script</h2>
+<p>Navigate into the cloned folder and execute the <code>setup.sh</code> file provided:</p>
+<pre><code>sudo bash ./setup.sh
+</code></pre>
+<h2 id="download-os-iso">Download OS ISO</h2>
+<p>Download the latest ISO of the OS you want to virtualize. For this example, let&rsquo;s use Windows 10 from <a href="https://www.microsoft.com/de-de/software-download/windows10ISO">here</a>.</p>
+<h2 id="create-virtual-machine">Create Virtual Machine</h2>
+<p>Open your virtual machine manager and create a new virtual machine. Choose the downloaded ISO, follow the setup steps, and before finishing, check &ldquo;Customize configuration.&rdquo; Configure the following options:</p>
+<ul>
+<li>Boot: <code>/usr/share/OVMF/OVMF_CODE_4M.fd</code></li>
+<li>Chipset: &ldquo;Q35&rdquo;</li>
+<li>CPU: 1 socket, X number of cores, 2 threads</li>
+<li>Allocate 2 GB less RAM than you have</li>
+<li>Set your virtual disk&rsquo;s cache mode to writeback</li>
+</ul>
+<h2 id="windows-only">(Windows only)</h2>
+<p>Download Virtio drivers and add them as a disk to your virtual setup. These drivers are necessary for Windows; most other OSs have them built-in.</p>
+<h2 id="install-os">Install OS</h2>
+<p>Install the OS, then shut down the virtual machine.</p>
+<h2 id="retrieve-gpu-bios">Retrieve GPU BIOS</h2>
+<p>Retrieve your GPU&rsquo;s BIOS. You can conveniently download it <a href="https://www.techpowerup.com/vgabios/">here</a>, or use various programs to dump your GPU BIOS:</p>
+<ul>
+<li>Nvidia: NVIDIA NVFlash</li>
+<li>AMD: ATI ATIFlash</li>
+</ul>
+<h2 id="add-gpu-rom">Add GPU ROM</h2>
+<p>Place the GPU ROM in the following directory:</p>
+<pre><code>        sudo mkdir /usr/share/vgabios
+        cp ./patched.rom /usr/share/vgabios/
+        cd /usr/share/vgabios
+        sudo chmod -R 644 patched.rom
+        sudo chown yourusername:yourusername patched.rom
+</code></pre>
+<p>Replace &ldquo;yourusername&rdquo; with your actual username.</p>
+<h2 id="configure-virtual-machine">Configure Virtual Machine</h2>
+<p>Remove any spice/qxl components in your virtual machine setup and add your GPU to the PCI section. You should have two devices for your GPU, so add both.</p>
+<h2 id="edit-gpu-xml">Edit GPU XML</h2>
+<p>Enable XML editing in the settings of your virtual machine manager and insert <code>&lt;rom file='/var/lib/libvirt/vgabios/patched.rom'/&gt;</code> into both of your GPU devices&rsquo; XMLs, between &ldquo;source&rdquo; and &ldquo;address.&rdquo;</p>
+<h2 id="add-devices">Add Devices</h2>
+<p>Add your PCI host controller, audio controller, and any other devices you want to include.</p>
+<h2 id="modify-qemu-file">Modify QEMU File</h2>
+<p>Check the <code>/etc/libvirt/hooks/qemu</code> file and edit the name of the placeholder &ldquo;win10&rdquo; to match your virtual machine&rsquo;s name. You can also add new sections by copying the existing one below it and editing the name.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>If everything worked as expected, you now have an awesome setup that can run virtually any OS. You can enjoy gaming on Windows, code on your favorite Linux distribution, and maybe even tinker with BSD somehow. It&rsquo;s all at your fingertips now.</p>
+</div>
+    
+    <div class="order-first order-lg-last col-12 col-lg-4">
+      
+      <div class="border p-3 sticky-top toc">
+        <p>Table of Contents</p>
+
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#install-ubuntu">Install Ubuntu</a></li>
+    <li><a href="#clone-repository">Clone Repository</a></li>
+    <li><a href="#execute-setup-script">Execute Setup Script</a></li>
+    <li><a href="#download-os-iso">Download OS ISO</a></li>
+    <li><a href="#create-virtual-machine">Create Virtual Machine</a></li>
+    <li><a href="#windows-only">(Windows only)</a></li>
+    <li><a href="#install-os">Install OS</a></li>
+    <li><a href="#retrieve-gpu-bios">Retrieve GPU BIOS</a></li>
+    <li><a href="#add-gpu-rom">Add GPU ROM</a></li>
+    <li><a href="#configure-virtual-machine">Configure Virtual Machine</a></li>
+    <li><a href="#edit-gpu-xml">Edit GPU XML</a></li>
+    <li><a href="#add-devices">Add Devices</a></li>
+    <li><a href="#modify-qemu-file">Modify QEMU File</a></li>
+  </ul>
+</nav>
+      </div>
+      
+    </div>
+  </div>
+
+  
+  
+
+  <hr />
+  <h4 class="text-center my-4">Similar Content</h4>
+
+  <div class="row g-3 mb-3">
+       
+    
+          
+    
+          
+    
+         
+  </div>
+  
+</div>
+
+        </div>
+        </main>
+    </div><footer class="footer">
+  
+  <section class="text-light bg-dark first-section">
+    <div
+      class="container d-flex flex-row justify-content-center justify-content-md-between align-items-center py-4 px-5"
+    >
+      
+      
+      <div class="d-none d-md-block">
+        <span>Here are some of my Socials &gt;</span>
+      </div>
+      
+      <div class="d-flex">
+        
+        <a href="https://github.com/BlyDoesCoding" class="mx-2">
+          <i class="bi bi-github text-light"></i>
+        </a>
+        
+        <a href="https://linkedin.com/in/lia-br%c3%bcggemann-b3275b35b" class="mx-2">
+          <i class="bi bi-linkedin text-light"></i>
+        </a>
+        
+        <a href="https://dev.to/blydoescoding" class="mx-2">
+          <i class="bi bi-code-slash text-light"></i>
+        </a>
+        
+      </div>
+      
+    </div>
+    
+  </section>
+  
+
+  
+  <section class="">
+    <div class="container text-md-start mt-5 px-5">
+      
+      <div class="row mt-3">
+        
+        <div class="col-md-6 col-lg-6 col-xl-4 text-center text-md-start mb-4">
+          
+          <h6 class="text-uppercase fw-bold">
+            Navigate
+          </h6>
+          <hr class="mb-4 mt-0 d-inline-block" />
+          <p>
+            <a href="/" class="text-muted text-uppercase">Home</a>
+          </p>
+          
+          <p>
+            <a href="/projects/" class="text-muted text-uppercase">Projects</a>
+          </p>
+          
+          <p>
+            <a href="/posts/" class="text-muted text-uppercase">Posts</a>
+          </p>
+          
+          <p>
+            <a href="/contacts/" class="text-muted text-uppercase">Contact</a>
+          </p>
+          
+        </div>
+        
+        <div class="d-none d-xl-block col-xl-4 text-center mb-3">
+          <h3>Lia Brüggemann</h3>
+          <p class="mb-2">My Personal Website</p>
+          <div class="fw-light mb-2">
+             <br />
+             <br />
+            
+          </div>
+
+          
+        </div>
+        
+        
+        <div
+          class="col-md-6 col-lg-6 col-xl-4 mb-4 text-center text-md-start text-xl-end"
+        >
+          
+          <h6 class="text-uppercase fw-bold">
+            Contact
+          </h6>
+          <hr class="mb-4 mt-0 d-inline-block" />
+           
+          <p>
+            <i class="bi bi-envelope mx-2 d-xl-none"></i>
+            <a
+              class="text-muted"
+              href="mailto:mail@lia-brueggemann.de"
+              >mail@lia-brueggemann.de</a
+            >
+            <i class="bi bi-envelope mx-2 d-none d-xl-inline"></i>
+          </p>
+           
+          <p>
+            <i class="bi bi-envelope mx-2 d-xl-none"></i>
+            <a
+              class="text-muted"
+              href="mailto:coding@blydoesmail.de"
+              >coding@blydoesmail.de</a
+            >
+            <i class="bi bi-envelope mx-2 d-none d-xl-inline"></i>
+          </p>
+           
+        </div>
+        
+        
+      </div>
+      
+    </div>
+  </section>
+  
+
+  
+  <div class="copyright py-2 text-center">
+    <p class="my-1 fs-6 text-muted"><p>Made with <a href="https://gohugo.io/">Hugo</a> &amp; <a href="https://github.com/ololiuhqui/magnolia-free-hugo-theme">Magnolia</a> by <a href="https://github.com/BlyDoesCoding">Myself</a></p>
+<p>Original Theme licensed under <a href="https://github.com/ololiuhqui/magnolia-free-hugo-theme/blob/main/LICENSE.md">MIT license</a> 📄</p>
+</p>
+  </div>
+
+  
+
+  
+
+   
+
+  <script src="/js/bundle.min.js" defer></script>
+</footer>
+</body>
+</html>

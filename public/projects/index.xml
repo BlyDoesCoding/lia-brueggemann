@@ -6,24 +6,31 @@
     <description>Recent content in Projects on Lia Brüggemann</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <copyright>Made with [Hugo](https://gohugo.io/) &amp; [Magnolia](https://github.com/ololiuhqui/magnolia-free-hugo-theme) and [Myself](https://github.com/BlyDoesCoding)
+    <copyright>Made with [Hugo](https://gohugo.io/) &amp; [Magnolia](https://github.com/ololiuhqui/magnolia-free-hugo-theme) by [Myself](https://github.com/BlyDoesCoding)
 
  Original Theme licensed under [MIT license](https://github.com/ololiuhqui/magnolia-free-hugo-theme/blob/main/LICENSE.md) 📄</copyright>
-    <lastBuildDate>Thu, 03 Oct 2024 11:16:02 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 03 Nov 2023 11:16:02 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Irene</title>
-      <link>http://localhost:1313/projects/irene/</link>
-      <pubDate>Thu, 03 Oct 2024 11:16:02 +0200</pubDate>
-      <guid>http://localhost:1313/projects/irene/</guid>
-      <description>Digital networks were built for the purpose of sharing computing resources by people who were themselves sharing resources, technologies, and credit in order to create it. This is why digital technology is biased in favor of openness and sharing. Because we are not used to operating in a realm with these biases, however, we often exploit the openness of others or end up exploited ourselves.</description>
+      <title>Watson</title>
+      <link>http://localhost:1313/projects/watson/</link>
+      <pubDate>Fri, 03 Nov 2023 11:16:02 +0200</pubDate>
+      <guid>http://localhost:1313/projects/watson/</guid>
+      <description>Watson is a Discord Activity setter written in Go and Fyne. Its rather simple to use and can come in Handy. You can mainly use it for having Custom Status Messages to show your Friends what you are doing.</description>
     </item>
     <item>
       <title>Irene</title>
-      <link>http://localhost:1313/projects/why-donating-to-free-and-opensource-software-projects-is-importantf/</link>
-      <pubDate>Thu, 03 Oct 2024 11:16:02 +0200</pubDate>
-      <guid>http://localhost:1313/projects/why-donating-to-free-and-opensource-software-projects-is-importantf/</guid>
-      <description>Digital networks were built for the purpose of sharing computing resources by people who were themselves sharing resources, technologies, and credit in order to create it. This is why digital technology is biased in favor of openness and sharing. Because we are not used to operating in a realm with these biases, however, we often exploit the openness of others or end up exploited ourselves.</description>
+      <link>http://localhost:1313/projects/irene/</link>
+      <pubDate>Tue, 03 Oct 2023 11:16:02 +0200</pubDate>
+      <guid>http://localhost:1313/projects/irene/</guid>
+      <description>Irene is a small Application written in Go and Fyne. I usually use it for resizing Pixelperfect versions of my Icons. Its a small Hobby Project i made a while ago so dont take it too Serious.</description>
+    </item>
+    <item>
+      <title>Sherly</title>
+      <link>http://localhost:1313/projects/sherly/</link>
+      <pubDate>Mon, 03 Apr 2023 11:16:02 +0200</pubDate>
+      <guid>http://localhost:1313/projects/sherly/</guid>
+      <description>Sherly is a Multithreaded Duplicate File Finder for your Terminal, written in java. You can Easily find duplicate Images, videos as well as any other type of Data. That can be helpful if you run on small storage or just want to keep regular housekeeping.</description>
     </item>
   </channel>
 </rss>

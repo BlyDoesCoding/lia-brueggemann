@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Lia Brüggemann</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <copyright>Made with [Hugo](https://gohugo.io/) &amp; [Magnolia](https://github.com/ololiuhqui/magnolia-free-hugo-theme) and [Myself](https://github.com/BlyDoesCoding)
+    <copyright>Made with [Hugo](https://gohugo.io/) &amp; [Magnolia](https://github.com/ololiuhqui/magnolia-free-hugo-theme) by [Myself](https://github.com/BlyDoesCoding)
 
  Original Theme licensed under [MIT license](https://github.com/ololiuhqui/magnolia-free-hugo-theme/blob/main/LICENSE.md) 📄</copyright>
     <lastBuildDate>Thu, 03 Oct 2024 11:16:02 +0200</lastBuildDate>
@@ -61,10 +61,24 @@
       <description></description>
     </item>
     <item>
-      <title>No-Image</title>
-      <link>http://localhost:1313/tags/no-image/</link>
+      <title>Docker</title>
+      <link>http://localhost:1313/tags/docker/</link>
       <pubDate>Sat, 28 Sep 2024 12:10:50 +0200</pubDate>
-      <guid>http://localhost:1313/tags/no-image/</guid>
+      <guid>http://localhost:1313/tags/docker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hosting</title>
+      <link>http://localhost:1313/tags/hosting/</link>
+      <pubDate>Sat, 28 Sep 2024 12:10:50 +0200</pubDate>
+      <guid>http://localhost:1313/tags/hosting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Server</title>
+      <link>http://localhost:1313/tags/server/</link>
+      <pubDate>Sat, 28 Sep 2024 12:10:50 +0200</pubDate>
+      <guid>http://localhost:1313/tags/server/</guid>
       <description></description>
     </item>
   </channel>
