@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Lia Brüggemann</title>
+    <link>http://localhost:1313/projects/</link>
+    <description>Recent content in Projects on Lia Brüggemann</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <copyright>Made with [Hugo](https://gohugo.io/) &amp; [Magnolia](https://github.com/ololiuhqui/magnolia-free-hugo-theme) and [Myself](https://github.com/BlyDoesCoding)
+
+ Original Theme licensed under [MIT license](https://github.com/ololiuhqui/magnolia-free-hugo-theme/blob/main/LICENSE.md) 📄</copyright>
+    <lastBuildDate>Thu, 03 Oct 2024 11:16:02 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Irene</title>
+      <link>http://localhost:1313/projects/irene/</link>
+      <pubDate>Thu, 03 Oct 2024 11:16:02 +0200</pubDate>
+      <guid>http://localhost:1313/projects/irene/</guid>
+      <description>Digital networks were built for the purpose of sharing computing resources by people who were themselves sharing resources, technologies, and credit in order to create it. This is why digital technology is biased in favor of openness and sharing. Because we are not used to operating in a realm with these biases, however, we often exploit the openness of others or end up exploited ourselves.</description>
+    </item>
+    <item>
+      <title>Irene</title>
+      <link>http://localhost:1313/projects/why-donating-to-free-and-opensource-software-projects-is-importantf/</link>
+      <pubDate>Thu, 03 Oct 2024 11:16:02 +0200</pubDate>
+      <guid>http://localhost:1313/projects/why-donating-to-free-and-opensource-software-projects-is-importantf/</guid>
+      <description>Digital networks were built for the purpose of sharing computing resources by people who were themselves sharing resources, technologies, and credit in order to create it. This is why digital technology is biased in favor of openness and sharing. Because we are not used to operating in a realm with these biases, however, we often exploit the openness of others or end up exploited ourselves.</description>
+    </item>
+  </channel>
+</rss>

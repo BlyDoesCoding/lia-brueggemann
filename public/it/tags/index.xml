@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Magnolia</title>
+    <link>http://localhost:1313/it/tags/</link>
+    <description>Recent content in Tags on Magnolia</description>
+    <generator>Hugo</generator>
+    <language>it-IT</language>
+    <copyright>Designed with [Hugo](https://gohugo.io/) by [Ludovico Caluori](https://github.com/ololiuhqui) 🎨 
+
+ Licensed under [MIT license](https://github.com/ololiuhqui/magnolia-free-hugo-theme/blob/main/LICENSE.md) 📄</copyright>
+    <lastBuildDate>Fri, 04 Oct 2024 11:15:09 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/it/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Far Crescere</title>
+      <link>http://localhost:1313/it/tags/far-crescere/</link>
+      <pubDate>Fri, 04 Oct 2024 11:15:09 +0200</pubDate>
+      <guid>http://localhost:1313/it/tags/far-crescere/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Piantare</title>
+      <link>http://localhost:1313/it/tags/piantare/</link>
+      <pubDate>Fri, 04 Oct 2024 11:15:09 +0200</pubDate>
+      <guid>http://localhost:1313/it/tags/piantare/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Software Libero</title>
+      <link>http://localhost:1313/it/tags/software-libero/</link>
+      <pubDate>Fri, 04 Oct 2024 11:15:09 +0200</pubDate>
+      <guid>http://localhost:1313/it/tags/software-libero/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fiori</title>
+      <link>http://localhost:1313/it/tags/fiori/</link>
+      <pubDate>Thu, 03 Oct 2024 10:58:12 +0200</pubDate>
+      <guid>http://localhost:1313/it/tags/fiori/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>No-Image</title>
+      <link>http://localhost:1313/it/tags/no-image/</link>
+      <pubDate>Sat, 28 Sep 2024 12:24:45 +0200</pubDate>
+      <guid>http://localhost:1313/it/tags/no-image/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

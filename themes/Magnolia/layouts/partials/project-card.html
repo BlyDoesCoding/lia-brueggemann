@@ -1,0 +1,59 @@
+<div class="col-12 col-md-6">
+  <div class="card p-0 bg-secondary shadow-sm border-none h-100">
+    <div class="row h-100">
+      <div class="col-12">
+        <div class="card-body h-100 d-flex flex-column justify-content-between">
+          <div>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h5 class="card-title mb-0"> <a href="{{.RelPermalink}}">{{.Title}}</a> </h5>
+
+              {{ with .Resources.GetMatch "images/icon.*" }}
+              <img
+                class="project-icon flex-shrink-0 ml-2"
+                src="{{ .RelPermalink }}"
+                alt="{{ $.Title }} Icon"
+                style="max-width: 55px; height: auto;" />
+              {{ end }}
+            </div>
+            <p class="card-text my-0">
+              <small class="text-body-secondary"
+                >{{.Date | time.Format "2 January , 2006"}}</small
+              >
+            </p>
+
+            <div class="mt-2">
+              {{ with .Params.source }}
+                <a href="{{ . }}" class="btn btn-sm btn-secondary border-primary mb-2 me-2">Source</a>
+              {{ end }}
+              {{ with .Params.releases }}
+                <a href="{{ . }}" class="btn btn-sm btn-secondary border-primary mb-2">Releases</a>
+              {{ end }}
+            </div>
+            </div>
+          <div class="card-text d-none d-lg-block">{{.Summary | plainify}}</div>
+
+          <div class="d-flex justify-content-between align-items-center mt-3 w-100">
+            <a href="{{.RelPermalink}}" class="btn btn-primary flex-shrink-0">Visit Project</a>
+
+            {{ with .Params.license }}
+            <small class="text-body-secondary">
+                License: {{ . }}
+            </small>
+            {{ end }}
+
+            {{ with .Params.version }}
+            <small class="text-body-secondary">
+                Latest Version: {{ . }}
+            </small>
+            {{ else }}
+            <small class="text-body-secondary">
+                Version info unavailable
+            </small>
+            {{ end }}
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

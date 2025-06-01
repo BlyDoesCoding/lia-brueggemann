@@ -1,0 +1,127 @@
+{{ define "main" }}
+<div class="container">
+  {{ with .Resources.GetMatch "images/icon.*" }}
+  <div class="text-center my-4">
+    <img
+      class="img-fluid"
+      src="{{ .RelPermalink }}"
+      alt="{{ $.Title }} Project Icon"
+      style="max-width: 100px; height: auto;"
+    />
+  </div>
+  {{ end }}
+
+  <h1 class="text-center mb-3">{{ .Title }}</h1>
+
+  <div class="row justify-content-center mb-4">
+    <div class="col-auto">
+      <small class="text-muted">Completed on {{ .Date | time.Format "2 January, 2006" }}</small>
+    </div>
+    {{ with .Params.version }}
+    <div class="col-auto">
+      <small class="text-muted">Version: {{ . }}</small>
+    </div>
+    {{ end }}
+    {{ with .Params.license }}
+    <div class="col-auto">
+      <small class="text-muted">License: {{ . }}</small>
+    </div>
+    {{ end }}
+  </div>
+
+  <hr />
+
+  <div class="row g-3 gx-lg-5">
+    <div class="col order-lg-first">{{ with .Content }}{{ . }}{{ end }}</div>
+
+    <div class="order-first order-lg-last col-12 col-lg-4">
+      {{/* Store the current page context in a variable */}}
+      {{ $currentPage := . }}
+
+      {{/* Merged Block: Rendered if TOC, Languages, or Platforms exist */}}
+      {{ if or (in $currentPage.TableOfContents "li") ($currentPage.Params.languages) ($currentPage.Params.platforms) }}
+      <div class="border p-3 sticky-top toc" style="top: var(--bs-sticky-top-height, 0px);">
+
+        {{ if in $currentPage.TableOfContents "li" }}
+        <p>{{ $currentPage.Site.Params.project.toc | default "Table of Contents" }}</p>
+        {{ $currentPage.TableOfContents }}
+        {{ end }}
+
+        {{ with $currentPage.Params.languages }}
+        {{ if in $currentPage.TableOfContents "li" }}
+        <hr class="mt-4 mb-3" /> {{/* Add a separator if TOC is also present */}}
+        {{ end }}
+        <p class="{{ if not (in $currentPage.TableOfContents "li") }}mt-0{{ else }}mt-4{{ end }} mb-3">{{ $currentPage.Site.Params.project.languages | default "Used Languages" }}</p>
+        <ul class="list-unstyled d-flex flex-wrap gap-3">
+          {{ range . }}
+          <li class="d-flex align-items-center me-3">
+            {{ $iconName := . | lower | replaceRE "\\s+" "-" | printf "%s.svg" }}
+            {{ $imgPath := printf "/languages/%s" $iconName }}
+            <img src="{{ $imgPath | relURL }}" alt="{{ . }} Logo" class="me-2" style="width: 28px; height: 28px;">
+            <span>{{ . | title }}</span>
+          </li>
+          {{ end }}
+        </ul>
+        {{ end }}
+
+        {{ with $currentPage.Params.platforms }}
+        {{ if or ($currentPage.Params.languages) (in $currentPage.TableOfContents "li") }}
+        <hr class="mt-4 mb-3" /> {{/* Add a separator if languages or TOC are present */}}
+        {{ end }}
+        <p class="{{ if not (or ($currentPage.Params.languages) (in $currentPage.TableOfContents "li")) }}mt-0{{ else }}mt-4{{ end }} mb-3">{{ $currentPage.Site.Params.project.platforms | default "Supported Platforms" }}</p>
+        <ul class="list-unstyled d-flex flex-wrap gap-3">
+          {{ range . }}
+          <li class="d-flex align-items-center me-3">
+            {{ $iconName := . | lower | replaceRE "\\s+" "-" | printf "%s.svg" }}
+            {{ $imgPath := printf "/languages/%s" $iconName }} {{/* Assuming platform icons are in the same folder */}}
+            <img src="{{ $imgPath | relURL }}" alt="{{ . }} Logo" class="me-2" style="width: 28px; height: 28px;">
+            <span>{{ . | title }}</span>
+          </li>
+          {{ end }}
+        </ul>
+        {{ end }}
+
+      </div>
+      {{ end }}
+    </div>
+  </div>
+
+  <div class="row justify-content-center mt-5 mb-4">
+    <div class="col-auto">
+      {{ with .Params.source }}
+      <a href="{{ . }}" class="btn btn-primary me-3" target="_blank" rel="noopener">View Source Code</a>
+      {{ end }}
+    </div>
+    <div class="col-auto">
+      {{ with .Params.releases }}
+      <a href="{{ . }}" class="btn btn-primary me-3" target="_blank" rel="noopener">View Releases</a> {{/* Changed from btn-info to btn-primary */}}
+      {{ end }}
+    </div>
+    <div class="col-auto">
+      {{ with .Params.demo }}
+      <a href="{{ . }}" class="btn btn-success" target="_blank" rel="noopener">Live Demo</a>
+      {{ end }}
+    </div>
+  </div>
+
+  <hr />
+
+  
+{{ with (site.GetPage "/projects") }}
+<h2 class="text-center my-4">{{ $.Site.Params.homepage.projectsTitle | default "Other Projects" }}</h2>
+<div class="row g-3 mb-3">
+  {{ range first 2 .Pages }}
+    {{- partial "project-card.html" . -}}
+  {{ end }}
+</div>
+<div class="d-flex justify-content-center">
+  <a
+    class="btn btn-primary btn-lg px-5 py-3 fs-6 fw-bolder shadow-sm"
+    href="{{ .RelPermalink }}"
+    >{{ $.Site.Params.homepage.projectsButton | default "View All Projects" }}</a
+  >
+</div>
+{{ end }}
+
+</div>
+{{ end }}
