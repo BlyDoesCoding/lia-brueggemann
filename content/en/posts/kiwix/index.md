@@ -1,5 +1,5 @@
 ---
-title: 'CasaOS'
+title: 'Preserving Digital Information without Internet'
 slug: 'kiwix'
 tags: ['Apps', 'Offline', 'Guide']
 summary: # This is what will be displayed as summary for the post (the theme will automatically generate one from the content you write in the post if left empty)
