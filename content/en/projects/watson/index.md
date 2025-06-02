@@ -9,7 +9,7 @@ translationKey: watson # If you have a translated post for this one, set the sam
 layout: 'single'
 version: '1.0.0' # <--- Add this line
 source: "https://github.com/BlyDoesCoding/Watson"
-releases: "https://github.com/BlydDoesCoding/Watson/releases"
+releases: "https://github.com/BlyDoesCoding/Watson/releases"
 languages:
   - go
 
