@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Growing on Lia Brüggemann</title>
+    <link>http://localhost:1313/de/tags/growing/</link>
+    <description>Recent content in Growing on Lia Brüggemann</description>
+    <generator>Hugo</generator>
+    <language>de-DE</language>
+    <copyright>Made with [Hugo](https://gohugo.io/) &amp; [Magnolia](https://github.com/ololiuhqui/magnolia-free-hugo-theme) by [Myself](https://github.com/BlyDoesCoding)
+
+ Original Theme licensed under [MIT license](https://github.com/ololiuhqui/magnolia-free-hugo-theme/blob/main/LICENSE.md) 📄</copyright>
+    <atom:link href="http://localhost:1313/de/tags/growing/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

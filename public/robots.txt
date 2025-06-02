@@ -1,8 +1,8 @@
 User-agent: *
 
-Disallow: /en/404
+Disallow: /de/404
 
-Disallow: /it/404
+Disallow: /en/404
 
 Sitemap: http://localhost:1313//sitemap.xml
 

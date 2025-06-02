@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apps on Lia Brüggemann</title>
+    <link>http://localhost:1313/de/tags/apps/</link>
+    <description>Recent content in Apps on Lia Brüggemann</description>
+    <generator>Hugo</generator>
+    <language>de-DE</language>
+    <copyright>Made with [Hugo](https://gohugo.io/) &amp; [Magnolia](https://github.com/ololiuhqui/magnolia-free-hugo-theme) by [Myself](https://github.com/BlyDoesCoding)
+
+ Original Theme licensed under [MIT license](https://github.com/ololiuhqui/magnolia-free-hugo-theme/blob/main/LICENSE.md) 📄</copyright>
+    <lastBuildDate>Mon, 28 Oct 2024 12:10:50 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/de/tags/apps/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Preserving Digital Information without Internet</title>
+      <link>http://localhost:1313/de/posts/kiwix/</link>
+      <pubDate>Mon, 28 Oct 2024 12:10:50 +0200</pubDate>
+      <guid>http://localhost:1313/de/posts/kiwix/</guid>
+      <description>&lt;h2 id=&#34;the-concept&#34;&gt;The Concept&lt;/h2&gt;&#xA;&lt;p&gt;Accessing internet articles, like Wikipedia entries, is usually straightforward as they&amp;rsquo;re hosted on remote servers. However, problems can arise with slow, limited, or no internet access. Downloading web pages for offline reading is an option, but there&amp;rsquo;s a more elegant and convenient solution.&lt;/p&gt;&#xA;&lt;h2 id=&#34;kiwix&#34;&gt;Kiwix&lt;/h2&gt;&#xA;&lt;p&gt;Let me introduce you to Kiwix, an open-source app that simplifies downloading and reading web content, including Wikipedia, in a user-friendly format.&lt;/p&gt;&#xA;&lt;p&gt;You can find Kiwix on their website &lt;a href=&#34;https://kiwix.org&#34;&gt;here&lt;/a&gt; or explore their GitHub page &lt;a href=&#34;https://github.com/kiwix&#34;&gt;here&lt;/a&gt;. The best part is that Kiwix is available for almost every platform.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

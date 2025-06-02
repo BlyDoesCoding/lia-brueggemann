@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Server on Lia Brüggemann</title>
+    <link>http://localhost:1313/de/tags/server/</link>
+    <description>Recent content in Server on Lia Brüggemann</description>
+    <generator>Hugo</generator>
+    <language>de-DE</language>
+    <copyright>Made with [Hugo](https://gohugo.io/) &amp; [Magnolia](https://github.com/ololiuhqui/magnolia-free-hugo-theme) by [Myself](https://github.com/BlyDoesCoding)
+
+ Original Theme licensed under [MIT license](https://github.com/ololiuhqui/magnolia-free-hugo-theme/blob/main/LICENSE.md) 📄</copyright>
+    <lastBuildDate>Sat, 28 Sep 2024 12:10:50 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/de/tags/server/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CasaOS</title>
+      <link>http://localhost:1313/de/posts/casa/</link>
+      <pubDate>Sat, 28 Sep 2024 12:10:50 +0200</pubDate>
+      <guid>http://localhost:1313/de/posts/casa/</guid>
+      <description>&lt;h2 id=&#34;exploring-casaos-for-server-revamp&#34;&gt;Exploring CasaOS for Server Revamp&lt;/h2&gt;&#xA;&lt;p&gt;I was eager to revamp my home server and embarked on a quest for new software projects that could breathe fresh life into it. That&amp;rsquo;s when I stumbled upon &lt;a href=&#34;https://github.com/IceWhaleTech/CasaOS&#34;&gt;CasaOS&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;not-just-an-os-but-a-user-friendly-web-panel&#34;&gt;Not Just an OS, But a User-Friendly Web Panel&lt;/h2&gt;&#xA;&lt;p&gt;Contrary to its name, CasaOS isn&amp;rsquo;t an operating system; rather, it&amp;rsquo;s a user-friendly web panel designed specifically for Linux servers. What caught my eye was its own &amp;ldquo;App Store,&amp;rdquo; a hub where I could effortlessly download popular server apps like Nextcloud or Jellyfin. The user interface is refreshingly minimalistic, making it a breeze to navigate. The installation process was a simple matter of copy-pasting a concise command. From the get-go, everything felt seamless.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

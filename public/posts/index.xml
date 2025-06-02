@@ -9,14 +9,14 @@
     <copyright>Made with [Hugo](https://gohugo.io/) &amp; [Magnolia](https://github.com/ololiuhqui/magnolia-free-hugo-theme) by [Myself](https://github.com/BlyDoesCoding)
 
  Original Theme licensed under [MIT license](https://github.com/ololiuhqui/magnolia-free-hugo-theme/blob/main/LICENSE.md) 📄</copyright>
-    <lastBuildDate>Thu, 03 Oct 2024 11:16:02 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 28 Oct 2024 12:10:50 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Why Donating to Free and Opensource Software Projects Is Important</title>
-      <link>http://localhost:1313/posts/why-donating-to-free-and-opensource-software-projects-is-important/</link>
-      <pubDate>Thu, 03 Oct 2024 11:16:02 +0200</pubDate>
-      <guid>http://localhost:1313/posts/why-donating-to-free-and-opensource-software-projects-is-important/</guid>
-      <description>Digital networks were built for the purpose of sharing computing resources by people who were themselves sharing resources, technologies, and credit in order to create it. This is why digital technology is biased in favor of openness and sharing. Because we are not used to operating in a realm with these biases, however, we often exploit the openness of others or end up exploited ourselves.</description>
+      <title>Preserving Digital Information without Internet</title>
+      <link>http://localhost:1313/posts/kiwix/</link>
+      <pubDate>Mon, 28 Oct 2024 12:10:50 +0200</pubDate>
+      <guid>http://localhost:1313/posts/kiwix/</guid>
+      <description>&lt;h2 id=&#34;the-concept&#34;&gt;The Concept&lt;/h2&gt;&#xA;&lt;p&gt;Accessing internet articles, like Wikipedia entries, is usually straightforward as they&amp;rsquo;re hosted on remote servers. However, problems can arise with slow, limited, or no internet access. Downloading web pages for offline reading is an option, but there&amp;rsquo;s a more elegant and convenient solution.&lt;/p&gt;&#xA;&lt;h2 id=&#34;kiwix&#34;&gt;Kiwix&lt;/h2&gt;&#xA;&lt;p&gt;Let me introduce you to Kiwix, an open-source app that simplifies downloading and reading web content, including Wikipedia, in a user-friendly format.&lt;/p&gt;&#xA;&lt;p&gt;You can find Kiwix on their website &lt;a href=&#34;https://kiwix.org&#34;&gt;here&lt;/a&gt; or explore their GitHub page &lt;a href=&#34;https://github.com/kiwix&#34;&gt;here&lt;/a&gt;. The best part is that Kiwix is available for almost every platform.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Steamdeck Modding Guide</title>
@@ -26,18 +26,18 @@
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The Steam Deck is a device that I became fascinated with instantly since it was announced. After using my LCD model for some time, I dived into the rabbit hole of modding it. I decided to write a comprehensive post about all the possibilities. Sit back, sip on your tea, and enjoy.&lt;/p&gt;&#xA;&lt;h2 id=&#34;accessories&#34;&gt;Accessories&lt;/h2&gt;&#xA;&lt;p&gt;Having useful utilities for your deck can greatly enhance your enjoyment of using it.&lt;/p&gt;&#xA;&lt;h3 id=&#34;sd-cards&#34;&gt;SD Cards&lt;/h3&gt;&#xA;&lt;p&gt;If you&amp;rsquo;re on a budget like me, you might have purchased a low-end 64GB (or lower storage in general) unit and simply need more space. The easiest solution is to buy an SD card and insert it into the easily accessible slot. Personally, I&amp;rsquo;ve had great experiences searching on Amazon for my desired size. It&amp;rsquo;s important to find one with adequate speed and capacity. Some even have &amp;ldquo;Steam Deck&amp;rdquo; in their description, which is usually a good sign. Nonetheless, don&amp;rsquo;t forget to check the reviews.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Flowers Again</title>
-      <link>http://localhost:1313/posts/flowers-again/</link>
-      <pubDate>Tue, 01 Oct 2024 10:49:18 +0200</pubDate>
-      <guid>http://localhost:1313/posts/flowers-again/</guid>
-      <description>&lt;p&gt;The summary on this page was left empty, so it was grabbed from the first content the theme can find on the page, which is what you are reading right now!&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;A wreathèd garland of deservèd praise,&#xA;Of praise deservèd, unto Thee I give,&#xA;I give to Thee, who knowest all my ways,&#xA;My crooked winding ways, wherein I live,—&#xA;Wherein I die, not live ; for life is straight,&#xA;Straight as a line, and ever tends to Thee,&#xA;To Thee, who art more far above deceit,&#xA;Than deceit seems above simplicity…&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;By George Herbert&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>CasaOS</title>
       <link>http://localhost:1313/posts/casa/</link>
       <pubDate>Sat, 28 Sep 2024 12:10:50 +0200</pubDate>
       <guid>http://localhost:1313/posts/casa/</guid>
       <description>&lt;h2 id=&#34;exploring-casaos-for-server-revamp&#34;&gt;Exploring CasaOS for Server Revamp&lt;/h2&gt;&#xA;&lt;p&gt;I was eager to revamp my home server and embarked on a quest for new software projects that could breathe fresh life into it. That&amp;rsquo;s when I stumbled upon &lt;a href=&#34;https://github.com/IceWhaleTech/CasaOS&#34;&gt;CasaOS&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;not-just-an-os-but-a-user-friendly-web-panel&#34;&gt;Not Just an OS, But a User-Friendly Web Panel&lt;/h2&gt;&#xA;&lt;p&gt;Contrary to its name, CasaOS isn&amp;rsquo;t an operating system; rather, it&amp;rsquo;s a user-friendly web panel designed specifically for Linux servers. What caught my eye was its own &amp;ldquo;App Store,&amp;rdquo; a hub where I could effortlessly download popular server apps like Nextcloud or Jellyfin. The user interface is refreshingly minimalistic, making it a breeze to navigate. The installation process was a simple matter of copy-pasting a concise command. From the get-go, everything felt seamless.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Single GPU Passthrough in VMs</title>
+      <link>http://localhost:1313/posts/gpu/</link>
+      <pubDate>Sun, 28 Jul 2024 12:10:50 +0200</pubDate>
+      <guid>http://localhost:1313/posts/gpu/</guid>
+      <description>&lt;h1 id=&#34;the-problem&#34;&gt;The Problem&lt;/h1&gt;&#xA;&lt;p&gt;Most people are used to running a single operating system on their PC—it&amp;rsquo;s the way it&amp;rsquo;s meant to be, and it usually works like a charm. But what if you need to test something on a different OS or want to use software only available on another one? The traditional approach would be to dual-boot or even triple-boot, but let&amp;rsquo;s be honest, that can be a bit of a headache.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

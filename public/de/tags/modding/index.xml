@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Modding on Lia Brüggemann</title>
+    <link>http://localhost:1313/de/tags/modding/</link>
+    <description>Recent content in Modding on Lia Brüggemann</description>
+    <generator>Hugo</generator>
+    <language>de-DE</language>
+    <copyright>Made with [Hugo](https://gohugo.io/) &amp; [Magnolia](https://github.com/ololiuhqui/magnolia-free-hugo-theme) by [Myself](https://github.com/BlyDoesCoding)
+
+ Original Theme licensed under [MIT license](https://github.com/ololiuhqui/magnolia-free-hugo-theme/blob/main/LICENSE.md) 📄</copyright>
+    <lastBuildDate>Thu, 03 Oct 2024 10:49:18 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/de/tags/modding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Steamdeck Modding Guide</title>
+      <link>http://localhost:1313/de/posts/steamdeck/</link>
+      <pubDate>Thu, 03 Oct 2024 10:49:18 +0200</pubDate>
+      <guid>http://localhost:1313/de/posts/steamdeck/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The Steam Deck is a device that I became fascinated with instantly since it was announced. After using my LCD model for some time, I dived into the rabbit hole of modding it. I decided to write a comprehensive post about all the possibilities. Sit back, sip on your tea, and enjoy.&lt;/p&gt;&#xA;&lt;h2 id=&#34;accessories&#34;&gt;Accessories&lt;/h2&gt;&#xA;&lt;p&gt;Having useful utilities for your deck can greatly enhance your enjoyment of using it.&lt;/p&gt;&#xA;&lt;h3 id=&#34;sd-cards&#34;&gt;SD Cards&lt;/h3&gt;&#xA;&lt;p&gt;If you&amp;rsquo;re on a budget like me, you might have purchased a low-end 64GB (or lower storage in general) unit and simply need more space. The easiest solution is to buy an SD card and insert it into the easily accessible slot. Personally, I&amp;rsquo;ve had great experiences searching on Amazon for my desired size. It&amp;rsquo;s important to find one with adequate speed and capacity. Some even have &amp;ldquo;Steam Deck&amp;rdquo; in their description, which is usually a good sign. Nonetheless, don&amp;rsquo;t forget to check the reviews.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
