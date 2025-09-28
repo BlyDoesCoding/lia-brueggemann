@@ -17,335 +17,77 @@
   </url><url>
     <loc>http://localhost:1313/tags/apps/</loc>
     <lastmod>2024-10-28T12:10:50+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-DE"
-                href="http://localhost:1313/de/tags/apps/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/apps/"
-                />
   </url><url>
     <loc>http://localhost:1313/tags/guide/</loc>
     <lastmod>2024-10-28T12:10:50+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-DE"
-                href="http://localhost:1313/de/tags/guide/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/guide/"
-                />
   </url><url>
     <loc>http://localhost:1313/tags/offline/</loc>
     <lastmod>2024-10-28T12:10:50+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-DE"
-                href="http://localhost:1313/de/tags/offline/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/offline/"
-                />
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
     <lastmod>2024-10-28T12:10:50+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-DE"
-                href="http://localhost:1313/de/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/posts/"
-                />
   </url><url>
     <loc>http://localhost:1313/posts/kiwix/</loc>
     <lastmod>2024-10-28T12:10:50+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-DE"
-                href="http://localhost:1313/de/posts/kiwix/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/posts/kiwix/"
-                />
   </url><url>
     <loc>http://localhost:1313/tags/gaming/</loc>
     <lastmod>2024-10-03T10:49:18+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-DE"
-                href="http://localhost:1313/de/tags/gaming/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/gaming/"
-                />
   </url><url>
     <loc>http://localhost:1313/tags/hardware/</loc>
     <lastmod>2024-10-03T10:49:18+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-DE"
-                href="http://localhost:1313/de/tags/hardware/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/hardware/"
-                />
   </url><url>
     <loc>http://localhost:1313/tags/modding/</loc>
     <lastmod>2024-10-03T10:49:18+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-DE"
-                href="http://localhost:1313/de/tags/modding/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/modding/"
-                />
   </url><url>
     <loc>http://localhost:1313/posts/steamdeck/</loc>
     <lastmod>2024-10-03T10:49:18+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-DE"
-                href="http://localhost:1313/de/posts/steamdeck/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/posts/steamdeck/"
-                />
   </url><url>
     <loc>http://localhost:1313/posts/casa/</loc>
     <lastmod>2024-09-28T12:10:50+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-DE"
-                href="http://localhost:1313/de/posts/casa/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/posts/casa/"
-                />
   </url><url>
     <loc>http://localhost:1313/tags/docker/</loc>
     <lastmod>2024-09-28T12:10:50+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-DE"
-                href="http://localhost:1313/de/tags/docker/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/docker/"
-                />
   </url><url>
     <loc>http://localhost:1313/tags/hosting/</loc>
     <lastmod>2024-09-28T12:10:50+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-DE"
-                href="http://localhost:1313/de/tags/hosting/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/hosting/"
-                />
   </url><url>
     <loc>http://localhost:1313/tags/server/</loc>
     <lastmod>2024-09-28T12:10:50+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-DE"
-                href="http://localhost:1313/de/tags/server/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/server/"
-                />
   </url><url>
     <loc>http://localhost:1313/tags/gpu/</loc>
     <lastmod>2024-07-28T12:10:50+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-DE"
-                href="http://localhost:1313/de/tags/gpu/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/gpu/"
-                />
   </url><url>
     <loc>http://localhost:1313/tags/passtrough/</loc>
     <lastmod>2024-07-28T12:10:50+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-DE"
-                href="http://localhost:1313/de/tags/passtrough/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/passtrough/"
-                />
   </url><url>
     <loc>http://localhost:1313/posts/gpu/</loc>
     <lastmod>2024-07-28T12:10:50+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-DE"
-                href="http://localhost:1313/de/posts/gpu/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/posts/gpu/"
-                />
   </url><url>
     <loc>http://localhost:1313/tags/vms/</loc>
     <lastmod>2024-07-28T12:10:50+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-DE"
-                href="http://localhost:1313/de/tags/vms/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/vms/"
-                />
   </url><url>
     <loc>http://localhost:1313/projects/</loc>
     <lastmod>2023-11-03T11:16:02+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-DE"
-                href="http://localhost:1313/de/projects/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/projects/"
-                />
   </url><url>
     <loc>http://localhost:1313/projects/watson/</loc>
     <lastmod>2023-11-03T11:16:02+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-DE"
-                href="http://localhost:1313/de/projects/watson/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/projects/watson/"
-                />
   </url><url>
     <loc>http://localhost:1313/projects/irene/</loc>
     <lastmod>2023-10-03T11:16:02+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-DE"
-                href="http://localhost:1313/de/projects/irene/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/projects/irene/"
-                />
   </url><url>
     <loc>http://localhost:1313/projects/sherly/</loc>
     <lastmod>2023-04-03T11:16:02+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-DE"
-                href="http://localhost:1313/de/projects/sherly/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/projects/sherly/"
-                />
   </url><url>
     <loc>http://localhost:1313/contacts/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-DE"
-                href="http://localhost:1313/contacts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/contacts/"
-                />
+  </url><url>
+    <loc>http://localhost:1313/datenschutz/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/flowers/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-DE"
-                href="http://localhost:1313/de/tags/flowers/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/flowers/"
-                />
   </url><url>
     <loc>http://localhost:1313/tags/foss/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-DE"
-                href="http://localhost:1313/de/tags/foss/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/foss/"
-                />
   </url><url>
     <loc>http://localhost:1313/tags/growing/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-DE"
-                href="http://localhost:1313/de/tags/growing/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/growing/"
-                />
   </url><url>
     <loc>http://localhost:1313/tags/planting/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-DE"
-                href="http://localhost:1313/de/tags/planting/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/planting/"
-                />
   </url>
 </urlset>

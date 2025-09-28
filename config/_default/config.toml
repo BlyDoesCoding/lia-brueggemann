@@ -1,6 +1,6 @@
 baseURL = 'https://www.lia-brueggemann.de'
 languageCode = ''
-title = 'Magnolia Default' # This can get overwritten by the single language files
+title = 'Lia Brüggemann' # This can get overwritten by the single language files
 defaultContentLanguage = 'en'
 # defaultContentLanguageInSubDir = true
 enableRobotsTXT = true
@@ -15,7 +15,7 @@ googleAnalytics = ""
   blockAIcrawlers = true
 
 # BLOG
-# Uncomment if you want to disable all posts and tags rendering and indexing
+# Uncomment if you want to disable all and tags rendering and indexing
 #ignoreFiles= ['posts/*']
 #disableKinds = ['taxonomy', 'term']
 
@@ -37,7 +37,7 @@ tag = "tags"
     min = '0.129.0'
 
 
-  
+
 # To render some markdown otherwise unrendered
 [markup]
   [markup.goldmark]
