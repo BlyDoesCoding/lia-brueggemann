@@ -9,8 +9,15 @@
     <copyright>Made with [Hugo](https://gohugo.io/) &amp; [Magnolia](https://github.com/ololiuhqui/magnolia-free-hugo-theme) by [Myself](https://github.com/BlyDoesCoding)
 
  Original Theme licensed under [MIT license](https://github.com/ololiuhqui/magnolia-free-hugo-theme/blob/main/LICENSE.md) 📄</copyright>
-    <lastBuildDate>Mon, 28 Oct 2024 12:10:50 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 21 Oct 2025 12:10:50 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Raylib</title>
+      <link>http://localhost:1313/posts/raylib/</link>
+      <pubDate>Tue, 21 Oct 2025 12:10:50 +0200</pubDate>
+      <guid>http://localhost:1313/posts/raylib/</guid>
+      <description>&lt;h2 id=&#34;games-and-libraries&#34;&gt;Games and libraries&lt;/h2&gt;&#xA;&lt;p&gt;I have recently been wanting to do more in terms of game dev. At the moment I&amp;rsquo;m also trying to get more into C; thus, I decided to dive into said endeavor with C. A game usually needs 3 components.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;* getting input from the player&#xA;* processing said inputs&#xA;* displaying fancy images to the player&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;I started with searching for a good solution to graphics. We have plenty of ways to do so, just to name a few:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Preserving Digital Information without Internet</title>
       <link>http://localhost:1313/posts/kiwix/</link>
